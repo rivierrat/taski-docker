@@ -171,9 +171,6 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
-        # Параметр script передаёт в action appleboy/ssh-action команды,
-        # которые нужно выполнить на сервере, 
-        # с которым установлено соединение
         script: |
           cd taski
           # Выполняет pull образов с Docker Hub
@@ -196,7 +193,7 @@ jobs:
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
             ${{ github.actor }} created commit:
-            Commit message: ${{ github.event.head_commit.message }}
+            Commit message: ${{ github.event.head_commit }}
             
             Repository: ${{ github.repository }}
             
