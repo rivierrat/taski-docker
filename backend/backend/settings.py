@@ -8,8 +8,7 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'taski.finux.ru', '51.250.25.253', ]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'taski.finux.ru', '51.250.25.253', ]
 
 INSTALLED_APPS = [
     'api.apps.ApiConfig',
@@ -80,9 +79,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Moscow'
 
 USE_I18N = True
 
